@@ -1,0 +1,378 @@
+﻿@charset UTF-8;
+/* ================================================ */
+/*               全体設定                */
+/* ================================================ */
+
+body {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif, Verdana, "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #000;
+	color: #fff;
+}
+
+
+/*キャッチ*/
+.catch{
+	background-image: url(images/TOP.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 828px;
+	  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+	.slick-next{
+	   display: none;
+	}
+
+.icon{
+	position: fixed;
+	right: 13%;
+	top:7%;
+	display: flex;
+	justify-content: space-between;
+	width: 15%;
+	z-index: 1;
+}
+.catch-wrapper{
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+/*ギャラリー*/
+.gallery{
+
+
+}
+.single-item{
+	width: 85%;
+	max-width: 991px;
+	margin: 0 auto;
+}
+
+h1{
+	color: #fff;
+	padding-top: 300px;
+	margin-bottom: 255px;
+	font-size: 9rem;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+.pink{
+	color: #f303b7;
+}
+
+h1::after{
+	content: '';
+	position: absolute;
+	bottom: -113px;
+	left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+	width: 190px;
+	height: 10px;
+	background: #ffffff;
+}
+.gallery-wrapper{
+	text-align: center;
+	margin:0 auto;
+	width: 80%;
+
+}
+
+/*チケット*/
+.ticket-wrapper{
+	text-align: center;
+	margin:0 auto;
+	width: 80%;
+}
+
+.ticket-list{
+	display: flex;
+	justify-content:space-between;
+	width: 90%;
+	margin: 0 auto;
+
+}
+
+h2{
+	font-size: 4rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-bottom: 78px;
+}
+
+h3{
+	font-size: 2.3rem;
+	margin-bottom: 35px;
+	letter-spacing: 2px;
+
+}
+.ticket-list p{
+	font-size: 2.8rem;
+	letter-spacing: 7px;
+	line-height: 75px;
+
+	}
+
+.number{
+	font-weight: bold;
+	font-size: 3.9rem;
+}
+.weekend{
+	margin-top: 80px;
+}
+
+.add{
+	border: solid 1px #ffffff;
+	border-radius: 10px;
+	margin-top: 83px;
+	padding: 15% 5%;
+	position: relative;
+}
+
+.add::before{
+	content: '';
+	position: absolute;
+	bottom: 90%;
+	left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+	width: 3px;
+	height: 76px;
+	background: #ffffff;
+	}
+h4{
+	font-size: 1.8rem;
+	letter-spacing: 1px;
+	margin: 20px;
+}
+
+.add p{
+	font-size: 2.4rem;
+	letter-spacing: 2px;
+}
+
+.number2{
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+/*オープン*/
+.open-wrapper{
+	text-align: center;
+	margin:0 auto;
+	width: 80%;
+	font-size: 3.2rem;
+	letter-spacing: 2px;
+}
+.open-wrapper p{
+	margin-top: 20px;
+}
+.hour{
+	color: #fff;
+	font-size: 4.5rem;
+}
+
+/*アクセス*/
+.access-wrapper{
+	text-align: center;
+	margin:0 auto;
+	width: 80%;
+
+}
+.access{
+	margin-bottom: 200px;
+}
+iframe{
+	    max-width: 991px;
+    width: 100%;
+}
+/*===============================================
+●tablet.css 画面の横幅が1299pxまで
+===============================================*/
+@media screen and (max-width: 1299px){
+
+.number {
+    font-size: 3.1rem;
+}
+
+.number2 {
+    font-weight: bold;
+    font-size: 2.7rem;
+}
+
+.ticket-list p {
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+.add p {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+}
+
+/*===============================================
+●tablet.css 画面の横幅が1023pxまで
+===============================================*/
+@media screen and (max-width: 1023px){
+h1{
+	font-size: 7.7rem;
+}
+.ticket-list {
+    display: block;
+}
+.wemen{
+	margin-top: 200px;
+}
+
+iframe {
+    height: 540px;
+    }
+
+.icon {
+    right: 9%;
+    top: 6%;
+    width: 24%;
+}
+
+
+h3{
+	font-size: 2.3rem;
+	letter-spacing: 2px;
+
+}
+.ticket-list p{
+	font-size: 2.8rem;
+	letter-spacing: 7px;
+
+	}
+
+.number{
+	font-size: 3.9rem;
+}
+
+h4{
+	font-size: 1.8rem;
+	letter-spacing: 1px;
+	margin: 20px;
+}
+.add{
+	    padding: 12% 5%;
+}
+.add p{
+	font-size: 2.4rem;
+	letter-spacing: 2px;
+}
+
+.number2{
+	font-weight: bold;
+	font-size: 3rem;
+}
+}
+/*===============================================
+●tablet.css 画面の横幅が600pxまで(ipad以下)
+===============================================*/
+@media screen and (max-width: 600px){
+
+
+.catch {
+    height: 540px;
+
+}
+.icon {
+    right: 12%;
+    top: 5%;
+    width: 34%;
+}
+.icon img{
+	width: 80%;
+	margin-left: 10px;
+
+}
+.catch-wrapper img{
+	width: 70%;
+}
+.gallery-wrapper {
+    width: 90%;
+}
+.single-item{
+	width: 95%;
+}
+h1 {
+    font-size: 4rem;
+    margin-bottom: 110px;
+    padding-top: 130px;
+}
+h1::after {
+    bottom: -54px;
+    width: 115px;
+    height: 7px;
+}
+
+.ticket-wrapper {
+    width: 90%;
+}
+h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    }
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.ticket-list p {
+	font-size: 1.2rem;
+    letter-spacing: 3px;
+    line-height: 40px;
+    }
+ .number {
+    font-size: 2.4rem;
+}
+
+.weekend {
+    margin-top: 60px;
+}
+.wemen {
+    margin-top: 120px;
+}
+h4 {
+    font-size: 1.3rem;
+    }
+.number2 {
+
+    font-size: 2rem;
+}
+.add p {
+    font-size: 1.1rem;
+    }
+.add{
+	margin-top: 53px;
+}
+.add::before {
+    bottom: 86%;
+    height: 60px;
+    }
+.open-wrapper {
+    width: 90%;
+    font-size: 2rem;
+}
+.hour {
+    font-size: 3rem;
+}
+.access {
+    margin-bottom: 130px;
+}
+
+iframe {
+    height: 310px;
+}
+
+	}
