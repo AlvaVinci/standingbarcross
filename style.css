@@ -20,6 +20,8 @@ body {
 	  display: flex;
   justify-content: center;
   align-items: center;
+  background-position: center 80%;
+    height: 96vh;
 
 }
 	.slick-next{
@@ -31,7 +33,7 @@ body {
 	right: 13%;
 	top:7%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	width: 15%;
 	z-index: 1;
 }
@@ -43,8 +45,9 @@ body {
 
 
 /*ギャラリー*/
-.gallery{
-
+.single-item img{
+	width: 100%;
+	height: auto;
 
 }
 .single-item{
@@ -97,6 +100,7 @@ h1::after{
 	justify-content:space-between;
 	width: 90%;
 	margin: 0 auto;
+	    max-width: 1100px;
 
 }
 
